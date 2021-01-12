@@ -15,7 +15,7 @@ body{
 }
 .hamburger{
     position: absolute;
-    top: 15px;
+    top: 22px;
     left: 29px;
 }
 .hamburger .longline{
@@ -111,6 +111,7 @@ section{
     background-color: white;
     border-radius: 16px;
     margin-top: 15px;
+    overflow: hidden;
 }
 .batch .subject{
     background-color: rgb(21, 202, 202);
