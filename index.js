@@ -5,7 +5,7 @@ const cors = require('cors');
 const bodyparser = require('body-parser');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
-const port = 3000||process.env.port;
+const port = 3000||process.env.PORT;
 require('./passport-setup')
 
 app.use(express.static(__dirname + '/static'));
