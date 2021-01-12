@@ -5,6 +5,7 @@ const cors = require('cors');
 const bodyparser = require('body-parser');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
+const port = 3000||process.env.port;
 require('./passport-setup')
 
 app.use(express.static(__dirname + '/static'));
@@ -59,6 +60,6 @@ app.get('/logout',(req,res)=>{
     req.logOut();
     res.redirect('/')
 })
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server started at port 3000');
 })
