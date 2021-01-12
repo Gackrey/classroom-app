@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color: rgb(21,112,255);
+}
+body{
+    background-color: rgb(240,247,250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.topcircle{
+    width: 100vw;
+    height: 82vh;
+    border-radius: 50%;
+    background-color: #afe1ff;
+    position: absolute;
+    top: -50%;
+}
+.topcircle img{
+    width: 11%;
+    height: 27%;
+    position: absolute;
+    top: 64%;
+    left: 44%;
+}
+.bottomcircle{
+    width: 20%;
+    height: 32%;
+    border-radius: 50%;
+    background-color: #afe1ff;
+    position: absolute;
+    bottom: -14%;
+    left: -3%;
+}
+.signin{
+    background-color: white;
+    box-shadow: 0 0 7px;
+    padding: 20px;
+}
+.signin h1{
+    text-align: center;
+}
+.login{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.signin a{
+    text-decoration: none;
+    display: block;
+    padding: 3px;
+    background-color: var(--primary-color);
+    padding-right: 50px;
+}
+.signin a span{
+    position: relative;
+    top: -5px;
+    left: 20px;
+    color: white;
+}
+.signin a img{
+    width: 20px;
+    height: 20px;
+}
+@media only screen and (max-width:768px){
+    .topcircle img {
+        width: 37%;
+        height: 26%;
+        position: absolute;
+        top: 64%;
+        left: 33%;
+    }
+    .bottomcircle{
+        width: 52%;
+        height: 32%;
+        border-radius: 50%;
+        background-color: #afe1ff;
+        position: absolute;
+        bottom: -14%;
+        left: -14%;
+    }
+}

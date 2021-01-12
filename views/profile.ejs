@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css" type="text/css">
+</head>
+
+<body>
+    <div class="hamburger">
+        <div class="longline"></div>
+        <div class="midline">
+            <div class="halflong"></div>
+            <div class="halfshort"></div>
+        </div>
+        <div class="longline"></div>
+    </div>
+    <div class="top">
+        <h1 class="name">Hi, <%= name %> </h1>
+        <p class="p-design">Are you ready to create Batch & Assignments</p>
+        <img src="<%= pic %>" alt="">
+    </div>
+
+    <!-- Upcoming Batches -->
+
+    <section class="class-box">
+        <h2>Upcoming Classes</h2>
+        <div class="classes">
+            <p class="class-info">It looks like you don't have any upcoming classes for today!</p>
+            <img src="/img/undraw_working_from_anywhere_ub67.png" alt="">
+        </div>
+    </section>
+
+    <!-- All Batches  -->
+
+    <div class="header-line">
+        <h2>All Batches</h2>
+        <span>Create Batch</span>
+        <button class="add">+</button>
+    </div>
+    <section>
+
+        <div class="batch-boxes">
+
+            <div class="batch">
+                <div class="subject">Maths</div>
+                <div class="batchinfo">
+                    <h2 class="batchname">Morning Batch</h2>
+                    <p>Grade:<span>6th</span></p>
+                </div>
+                <div class="days">
+                    <img src="img/iconfinder_calendar_1814093.png" alt="">
+                    <span class="listdays">Mon,Tue,Wed</span>
+                </div>
+            </div>
+
+            <div class="batch">
+                <div class="subject">Physics</div>
+                <div class="batchinfo">
+                    <h2 class="batchname">Evening Batch</h2>
+                    <p>Grade:<span>7th</span></p>
+                </div>
+                <div class="days">
+                    <img src="img/iconfinder_calendar_1814093.png" alt="">
+                    <span class="listdays">Mon,Tue,Wed,Sat</span>
+                </div>
+            </div>
+
+            <div class="batch">
+                <div class="subject">Computer</div>
+                <div class="batchinfo">
+                    <h2 class="batchname">Math's Batch</h2>
+                    <p>Grade:<span>4th</span></p>
+                </div>
+                <div class="days">
+                    <img src="img/iconfinder_calendar_1814093.png" alt="">
+                    <span class="listdays">Mon,Tue</span>
+                </div>
+            </div>
+
+        </div>
+        <p class="viewall" id="viewall1">View More</p>
+    </section>
+
+    <!-- Assignments  -->
+
+    <div class="assignment-line">
+        <h2>Assignments</h2>
+        <span>Recently Submitted</span>
+    </div>
+    <section>
+
+        <div class="assignment-boxes">
+            <div class="assignment">
+                <div class="assignment-heading">
+                    <h2>Assignment 1</h2>
+                    <p>Submitted: <span>15/20</span></p>
+                </div>
+                <span class="subject">Maths</span>
+                <p class="desc" id="desc1">Rational Numbers assignment,very important for your next exam.....</p>
+                <span class="read-more">Read More</span>
+                <p class="duedate">Due Date:18 Sep|2:00 PM</p>
+            </div>
+            <div class="assignment">
+                <div class="assignment-heading">
+                    <h2>Assignment 2</h2>
+                    <p>Submitted: <span>15/20</span></p>
+                </div>
+                <span class="subject">Science</span>
+                <p class="desc" id="desc1">Crop Production & Management. Very important for your next exam......</p>
+                <span class="read-more">Read More</span>
+                <p class="duedate">Due Date:18 Sep|2:00 PM</p>
+            </div>
+        </div>
+    </section>
+    <p id="viewall2" class="viewall">View More</p>
+</body>
+
+</html>

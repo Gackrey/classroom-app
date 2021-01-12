@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color: rgb(21,112,255);
+    --line-color:rgb(73, 73, 73);
+    --inner-line-color:rgb(107, 107, 107);
+}
+body{
+    background-color: rgb(240,247,250);
+    margin-left: 0px;
+    font-family: Poppins;
+}
+.hamburger{
+    position: absolute;
+    top: 15px;
+    left: 29px;
+}
+.hamburger .longline{
+    width: 37px;
+    height: 4.5px;
+    margin: 8px 0;
+    border-radius: 2px;
+    background-color: var(--primary-color)
+}
+.hamburger .midline{
+    display: flex;
+}
+.hamburger .midline .halflong{
+    width: 20px;
+    height: 4.5px;
+    border-radius: 2px;
+    background-color: var(--primary-color)
+}
+.hamburger .midline .halfshort{
+    width: 12px;
+    height: 4.5px;
+    margin-left: 5px;
+    border-radius: 2px;
+    background-color: var(--primary-color)
+}
+section{
+    margin: auto;
+    width: 88%;
+}
+/* Upcoming Classes  */
+
+.name{
+    margin-top: 20px;
+    margin-left: 94px;
+}
+.p-design{
+    font-size: 16px;
+    margin: 10px 0;
+    margin-left: 94px;
+    color: var(--line-color);
+}
+.top img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 19px;
+    left: 90%;
+}
+.classes{
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 88%;
+}
+.classes .class-info{
+    padding: 10px;
+    text-align: center;
+}
+.classes img{
+    margin: auto;
+    width: 337px;
+    height: auto;
+    display: block;
+}
+/* Add Batches */
+
+.header-line{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 6%;
+}
+.header-line span{
+    margin-left: 63%;
+    padding-top: 7px;
+    font-size: 18px;
+    color: var(--line-color);
+}
+.header-line .add{
+    margin: 0 5px;
+    border-radius: 5px;
+    padding: 0px 8px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color:var(--primary-color);
+    font-size: 26px;
+}
+.batch-boxes{
+    width: 88%;
+}
+.batch{
+    background-color: white;
+    border-radius: 16px;
+    margin-top: 15px;
+}
+.batch .subject{
+    background-color: rgb(21, 202, 202);
+    color: white;
+    border-radius: 20px;
+    padding: 8px;
+    padding-left: 38px;
+    padding-right: 25px;
+    position: relative;
+    left: -21px;
+    width: 63px;
+}
+.batchinfo{
+    display: flex;
+}
+.batchinfo .batchname{
+    padding: 5px 57px;
+}
+.batchinfo p{
+    position: relative;
+    padding-left: 20px;
+    padding-top: 7px;
+    color: var(--inner-line-color);
+}
+.batchinfo p span{
+    color: black;
+}
+.days{
+    display: flex;
+    padding-left: 55px;
+}
+.days .listdays{
+    color: var(--inner-line-color);
+    margin-bottom: 10px;
+    display: block;
+}
+.days img{
+    width: 20px;
+    height: 20px;
+}
+.viewall{
+    width: 88%;
+    margin: auto;
+    color: var(--line-color);
+    cursor: pointer;
+}
+.assignment-boxes{
+    width: 88%;
+}
+.assignmenttoggle{
+    height: 575px;
+}
+.assignment{
+    background-color: white;
+    border-radius: 16px;
+    margin-top: 15px;
+    padding: 20px 13px;
+}
+.assignment-heading{
+    display: flex;
+}
+.assignment-line{
+    display: flex;
+    margin-left: 6%;
+}
+.assignment-line span{
+    color: var(--inner-line-color);
+    margin-top: 7px;
+    margin-left: 11px;
+}
+.assignment-heading p{
+    color: var(--inner-line-color);
+    margin-top: 7px;
+    margin-left: 100px;
+}
+.assignment-heading p> span{
+    color: var(--primary-color);
+}
+.assignment .subject{
+    margin: 10px 0;
+    display: block;
+    color: var(--primary-color);
+}
+.assignment .desc{
+    color: var(--line-color);
+    transition: all 0.5s;
+}
+.assignment .read-more{
+    margin: 10px 0;
+    display: block;
+    font-size: small;
+    cursor: pointer;
+    color: var(--inner-line-color);
+}
+.assignment .duedate{
+    color: #df1212;
+}
+
+@media only screen and (max-width:768px){
+    .hamburger{
+        left: 5px;
+        top: 21px;
+    }
+    .hamburger .longline{
+        width: 27px;
+        height: 4.5px;
+        border-radius: 2px;
+    }
+    .hamburger .midline{
+        display: flex;
+    }
+    .hamburger .midline .halflong{
+        width: 15px;
+        height: 4.5px;
+        border-radius: 2px;
+    }
+    .hamburger .midline .halfshort{
+        width: 7px;
+        height: 4.5px;
+        margin-left: 5px;
+        border-radius: 2px;
+    }
+    .name,.p-design{
+        margin-left: 40px;
+    }
+    .top img{
+        width: 45px;
+        height: 45px;
+        top: 14px;
+        left: 86%;
+    }
+    section{
+        width: 85%;
+    }
+    .batchinfo .batchname {
+        padding: 5px 10px;
+    }
+    .classes img{
+        width: 200px;
+        height: auto;
+    }
+    .classes{
+        width: 100%;
+    }
+    .batch-boxes{
+        width: 100%;
+    }
+    .assignment-boxes{
+        width: 100%;
+    }
+    .days{
+        padding-left: 10px;
+    }
+    .assignment-heading p {
+        margin-left: 8px;
+        margin-top: 10px;
+        font-size: small;
+    }
+    .header-line{
+        margin-left: 9%;
+    }
+    .assignment-line{
+        margin-left: 7%;
+    }
+    .header-line span{
+        margin-left: 5%;
+    }
+}
